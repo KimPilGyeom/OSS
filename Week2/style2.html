@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>week2-assignment#1 - Style 2 (방법 2)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #c0392b;
+    }
+
+    /* 상단 네비게이션 */
+    .div_navtop {
+      background-color: #c0392b;
+      color: white;
+      padding: 20px;
+      text-align: left;
+    }
+    .div_navtop h2 { margin: 0; font-size: 2.5em; }
+    .div_navtop_content { font-size: 1.2em; margin-top: 10px; }
+
+    /* 중앙 컨테이너 */
+    .container {
+      background-color: white;
+      margin: 20px auto;
+      border-radius: 5px;
+      padding: 20px 20px 0 20px; /* ✅ 하단 padding 제거 */
+      box-sizing: border-box;
+      width: calc(100% - 40px);
+      max-width: 1400px;
+    }
+
+    /* 메인 컨텐츠 */
+    .div_maincontent { display: flex; justify-content: space-between; align-items: flex-start; }
+
+    .div_centercontent { flex: 1; margin-right: 20px; }
+    .div_centercontent h2 { color: #c0392b; }
+    .div_centercontent h3 { color: #e74c3c; }
+    .div_centercontent a { color: #c0392b; text-decoration: none; }
+
+    /* 오른쪽 메뉴 */
+    .div_rightmenu { width: 200px; }
+    .div_rightmenu ul { list-style: none; padding: 0; margin: 0; }
+    .div_rightmenu ul li {
+      background-color: #e74c3c; color: white; border-radius: 20px;
+      margin-bottom: 10px; padding: 10px; text-align: center;
+      cursor: pointer; font-weight: bold;
+    }
+    .div_rightmenu ul li.active {
+      background-color: white; color: #e74c3c; border: 2px solid #e74c3c;
+    }
+
+    /* 사이드바 (컨테이너와 딱 붙게) */
+    .div_sidebar {
+      margin: 20px -20px -20px -20px; /* ✅ 좌우 -20px 줘서 container padding 무시 */
+      padding: 15px;
+      border-radius: 0 0 5px 5px;      /* ✅ 아래쪽만 둥글게 */
+      background-color: #f2d7d5;
+      color: #c0392b;
+      width: auto;
+      box-sizing: border-box;
+    }
+    .div_sidebar h4 { margin: 0 0 10px 0; color: #a93226; }
+
+    /* 하단 푸터 */
+    .div_footer {
+      background-color: #c0392b; color: white;
+      padding: 20px; text-align: center;
+    font-size: 11px;        
+    }
+  </style>
+</head>
+<body>
+  <div class="div_navtop">
+    <h2>Welcome to 김필겸 Homepage (21900204)</h2>
+    <div class="div_navtop_content">Use the menu to select different Stylesheets</div>
+  </div>
+
+  <div class="container">
+    <div class="div_maincontent">
+      <div class="div_centercontent">
+        <h2>Same Page Different Stylesheets</h2>
+      <br><br>
+        <div><a href="./style1.html">Stylesheet1</a>, <a href="./style2.html">Stylesheet2</a>, <a href="./style3.html">Stylesheet3</a>, <a href="./style4.html">Stylesheet4</a>.</div>
+        <h3>No Styles</h3>
+        <br><br>
+        <div><a href="./index.html">No Stylesheet</a>.</div>
+      </div>
+      <div class="div_rightmenu">
+        <ul>
+          <li>Stylesheet 1</li>
+          <li class="active">Stylesheet 2</li>
+          <li>Stylesheet 3</li>
+          <li>Stylesheet 4</li>
+          <li>No Stylesheet</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="div_sidebar">
+      <h4>Side-Bar</h4>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.    </div>
+  </div>
+
+  <div class="div_footer">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.  </div>
+</body>
+</html>
