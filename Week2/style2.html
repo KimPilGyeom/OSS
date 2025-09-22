@@ -11,7 +11,6 @@
       background-color: #c0392b;
     }
 
-    /* 상단 네비게이션 */
     .div_navtop {
       background-color: #c0392b;
       color: white;
@@ -21,18 +20,16 @@
     .div_navtop h2 { margin: 0; font-size: 2.5em; }
     .div_navtop_content { font-size: 1.2em; margin-top: 10px; }
 
-    /* 중앙 컨테이너 */
     .container {
       background-color: white;
       margin: 20px auto;
       border-radius: 5px;
-      padding: 20px 20px 0 20px; /* ✅ 하단 padding 제거 */
+      padding: 20px 20px 0 20px; 
       box-sizing: border-box;
       width: calc(100% - 40px);
       max-width: 1400px;
     }
 
-    /* 메인 컨텐츠 */
     .div_maincontent { display: flex; justify-content: space-between; align-items: flex-start; }
 
     .div_centercontent { flex: 1; margin-right: 20px; }
@@ -40,7 +37,6 @@
     .div_centercontent h3 { color: #e74c3c; }
     .div_centercontent a { color: #c0392b; text-decoration: none; }
 
-    /* 오른쪽 메뉴 */
     .div_rightmenu { width: 200px; }
     .div_rightmenu ul { list-style: none; padding: 0; margin: 0; }
     .div_rightmenu ul li {
@@ -52,11 +48,11 @@
       background-color: white; color: #e74c3c; border: 2px solid #e74c3c;
     }
 
-    /* 사이드바 (컨테이너와 딱 붙게) */
+
     .div_sidebar {
-      margin: 20px -20px -20px -20px; /* ✅ 좌우 -20px 줘서 container padding 무시 */
+      margin: 20px -20px -20px -20px; 
       padding: 15px;
-      border-radius: 0 0 5px 5px;      /* ✅ 아래쪽만 둥글게 */
+      border-radius: 0 0 5px 5px;      
       background-color: #f2d7d5;
       color: #c0392b;
       width: auto;
@@ -64,7 +60,7 @@
     }
     .div_sidebar h4 { margin: 0 0 10px 0; color: #a93226; }
 
-    /* 하단 푸터 */
+
     .div_footer {
       background-color: #c0392b; color: white;
       padding: 20px; text-align: center;
