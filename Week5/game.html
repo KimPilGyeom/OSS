@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+</head>
+<style>
+    .div_panel{
+        font-size: 500px;
+        text-align: center;
+    }
+    .div_panel.div_panel_O{
+        background-color: blue;
+    }
+    .div_panel.div_panel_X{
+        background-color: palevioletred;
+    }
+    .div_player{
+        text-align: center;
+        position: fixed;
+        font-size: 15px;
+        border-radius: 50%;
+        padding-top: 5px;
+        width: 50px;
+        height: 50px;
+        left: clac(50%-25px);
+    }
+</style>
+<body>
+    stdnum : <input id="input_stdnum" /> <button onclick="listener_registe"
+    <div>
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <div class="div_panel div_panel_O" onclick="listner_panel_clicked('o')">
+                        O
+                    </div>
+                </td>
+                <td>
+                    <div class="div_panel div_panel_X" onclick="listner_panel_clicked('x')">
+                        X
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script>
+            let registered = false;
+            function listener_register(){
+                $("#div_player_me").removeClass("hide");
+                let input_stdnum = $("input")
+                $("#div_player_me_stdnum").text();
+                registered = true;
+            }
+            function listener_panel_clicked(obj_way){
+                // alert(obj_way);
+                let temp_left = "25%";
+                if(obj_way === "o"){
+                    $("#div_player_me").css("left", "calc(25%-25px)");
+                }else{
+                    tempt_left = "75%";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>
