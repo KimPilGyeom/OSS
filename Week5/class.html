@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+</head>
+
+<style>
+    div.example{
+        font-size: 80px;
+        background-color:rgb(22, 228, 53)
+    }
+    /* @media only screen and (max-width: 450px) {
+    div.example {
+    font-size: 30px;
+        background-color:aquamarine;
+        }
+    }
+    @media only screen and (min-width:451px) and (max-width: 600px) {
+    div.example {
+    font-size: 45px;
+        background-color:pink;
+        }
+    }
+    @media only screen and (min-width:601px) {
+    div.example {
+    font-size: 50px;
+        background-color:yellowgreen;
+        }
+    } */
+
+    div.example1{
+        font: size 30px;
+        background-color:aquamarine
+    }
+    div.example2{
+        font: size 30px;
+        background-color:pink;
+    }
+    div.example3{
+        font: size 50;
+        background-color:yellowgreen;
+    }
+</style>
+
+<body>
+    <div class = "example">example</div>
+    <script>
+        listener_resize();
+        function listener_resize(){
+            let width = window.innerWidth;
+        let width2 = $(window).width();
+        $(".example").removeClass("example1")
+        $(".example").removeClass("example2")
+        $(".example").removeClass("example3")
+        if(width>600){
+            $(".example").addClass("example3")
+        }
+        else if(width>450){
+            $(".example").addClass("example2")
+        }
+        else{
+            $(".example").addClass("example1")
+        }
+        }
+       
+        // alert(width1);
+        // alert(width2);
+
+        // window.addEventListner("resize",function(){
+        //     console.log("resized!");
+        // });
+        // $(Window).resize(function(){
+        //     console.log("resized2");
+        // });
+    </script>
+    450px 이하일때 배경은 아쿠아마린 ㅡ글자 크기는 30px
+    451~600px일때는 배경은 핑크 / 글자 크기는 450px
+    601 px 이상일대는 배경은 열로우 그린/ 글자크기는 50px
+    <br>
+    <style>
+        img{
+            max-width:100%;
+            height: auto;
+        }
+        div.div_img{
+            height: 300px;
+            background-image: url('https://i.pinimg.com/236x/c2/0d/30/c20d30243617f59b97d15819a14c65b4.jpg');
+            background-size: contain;
+        }
+    </style>
+    <image src=" https://i.pinimg.com/236x/c2/0d/30/c20d30243617f59b97d15819a14c65b4.jpg">
+
+
+
+
+    
+</body>
+</html>
