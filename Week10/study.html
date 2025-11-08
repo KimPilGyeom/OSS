@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id = "div_01"> div_01 입니다.</div>
+    <button id="btn_disappear">사라지기</button>
+    <script>
+        let div_01 = document.getElementById("div_01");
+        alert(div_01.innderHTML);
+
+        let div_01jq = $("#div_01");
+        alert(Div_01jq.html());
+
+        $(function(){
+            $("#btn_disappear").click(function(){
+                //$(this).hide();
+                $("#div_01").remove();
+            });
+            $("btn_fontcolor").click(function(){
+                alert("font color?");
+                $("#div_01").css("color", "red");
+            })
+            $("btn_movingㅇ").click(function(){
+                alert("font color?");
+                $("#div_01").css("color", "red");
+            })
+        });
+    </script>
+</body>
+</html>

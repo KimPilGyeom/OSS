@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "name": "수정된상품",
+      "price": 99999,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "Monitor",
+      "price": 180000,
+      "stock": 5,
+      "status": "sold_out"
+    },
+    {
+      "id": "4",
+      "name": "Speaker",
+      "price": 75000,
+      "stock": 7,
+      "status": "available"
+    },
+    {
+      "id": "5",
+      "name": "Webcam",
+      "price": 55000,
+      "stock": 15,
+      "status": "available"
+    },
+    {
+      "id": "6",
+      "name": "Microphone",
+      "price": 90000,
+      "stock": 3,
+      "status": "sold_out"
+    },
+    {
+      "id": "7",
+      "name": "Tablet",
+      "price": 300000,
+      "stock": 8,
+      "status": "available"
+    },
+    {
+      "id": "8",
+      "name": "Charger",
+      "price": 15000,
+      "stock": 30,
+      "status": "available"
+    },
+    {
+      "id": "9",
+      "name": "Headset",
+      "price": 65000,
+      "stock": 6,
+      "status": "available"
+    },
+    {
+      "id": "10",
+      "name": "USB Hub",
+      "price": 20000,
+      "stock": 20,
+      "status": "available"
+    },
+    {
+      "id": "d44a",
+      "name": "과자",
+      "price": "1000"
+    }
+  ]
+}
